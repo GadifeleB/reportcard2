@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.brenda.reportcard.Main3Activity">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Student Name: "
+        android:layout_alignBaseline="@+id/studentID"
+        android:layout_alignBottom="@+id/studentID"
+        android:layout_alignRight="@+id/StudentText"
+        android:layout_alignEnd="@+id/StudentText" />
+
+    <EditText
+        android:id="@+id/studentID"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="154dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/StudentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Ositilwe: "
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_alignBaseline="@+id/StudentName"
+        android:layout_alignBottom="@+id/StudentName"
+        android:layout_toLeftOf="@+id/StudentName"
+        android:layout_toStartOf="@+id/StudentName" />
+
+    <EditText
+        android:id="@+id/StudentName"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/Name"
+        android:layout_alignLeft="@+id/studentID"
+        android:layout_alignStart="@+id/studentID" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:onClick="delete"
+            android:layout_weight="1"
+
+            android:text="Delete"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

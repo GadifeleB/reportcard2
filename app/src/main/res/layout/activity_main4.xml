@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context="com.example.brenda.reportcard.Main4Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">/
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Accoutning"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/Accoutning"
+                android:src="@drawable/pee" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/New_StudentName"
+                android:layout_alignBottom="@+id/New_StudentName"
+                android:layout_toLeftOf="@+id/Old_StudentName"
+                android:layout_toStartOf="@+id/Old_StudentName"
+                android:text="Student Surname: "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/Old_StudentName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_marginLeft="43dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBottom="@+id/Old_StudentName"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:layout_toEndOf="@+id/textView3"
+                android:layout_toRightOf="@+id/textView3"
+                android:text="Student Name: " />
+
+            <EditText
+                android:id="@+id/New_StudentName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Old_StudentName"
+                android:layout_alignStart="@+id/Old_StudentName"
+                android:layout_below="@+id/Old_StudentName" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/mathEdit"
+                android:layout_alignBottom="@+id/mathEdit"
+                android:layout_alignEnd="@+id/textView"
+                android:layout_alignRight="@+id/textView"
+                android:text="Age:" />
+
+            <EditText
+                android:id="@+id/mathEdit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/New_StudentName"
+                android:layout_alignStart="@+id/New_StudentName"
+                android:layout_below="@+id/New_StudentName" />
+
+            <TextView
+                android:id="@+id/Science"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ScienceEdit"
+                android:layout_alignBottom="@+id/ScienceEdit"
+                android:layout_alignEnd="@+id/Accoutning"
+                android:layout_alignRight="@+id/Accoutning"
+                android:text="Science:" />
+
+            <EditText
+                android:id="@+id/ScienceEdit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/AccoutningEdit"
+                android:layout_alignStart="@+id/AccoutningEdit"
+                android:layout_below="@+id/AccoutningEdit" />
+
+            <TextView
+                android:id="@+id/Busines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/BusinesEdit"
+                android:layout_alignBottom="@+id/BusinesEdit"
+                android:layout_alignLeft="@+id/Science"
+                android:layout_alignStart="@+id/Science"
+                android:text="Grade:" />
+
+            <EditText
+                android:id="@+id/BusinesEdit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mathEdit"
+                android:layout_alignStart="@+id/mathEdit"
+                android:layout_below="@+id/mathEdit" />
+
+            <TextView
+                android:id="@+id/Accoutning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/AccoutningEdit"
+                android:layout_alignBottom="@+id/AccoutningEdit"
+                android:layout_alignEnd="@+id/textView5"
+                android:layout_alignRight="@+id/textView5"
+                android:text="Mathematics:" />
+
+            <EditText
+                android:id="@+id/AccoutningEdit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/BusinesEdit"
+                android:layout_alignStart="@+id/BusinesEdit"
+                android:layout_below="@+id/BusinesEdit" />
+
+            <TextView
+                android:id="@+id/English"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/EnglishEdit"
+                android:layout_alignBottom="@+id/EnglishEdit"
+                android:layout_alignEnd="@+id/Science"
+                android:layout_alignRight="@+id/Science"
+                android:text="English:" />
+
+            <EditText
+                android:id="@+id/EnglishEdit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ScienceEdit"
+                android:layout_alignStart="@+id/ScienceEdit"
+                android:layout_below="@+id/ScienceEdit"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="11dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+
+                android:onClick="addUser"
+                android:text="Add"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

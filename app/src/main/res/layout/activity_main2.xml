@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brenda.reportcard.Main2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="533dp">
+
+            <TextView
+                android:id="@+id/student_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="New Student Name: "
+                android:layout_below="@+id/Newstudent_number"
+                android:layout_alignLeft="@+id/textViewNew"
+                android:layout_alignStart="@+id/textViewNew" />
+
+            <EditText
+                android:id="@+id/New_StudentNumber"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:hint="New Student Name"
+                android:layout_below="@+id/Old_studentNumber"
+                android:layout_alignLeft="@+id/Old_StudentName"
+                android:layout_alignStart="@+id/Old_StudentName" />
+
+            <TextView
+                android:id="@+id/Newstudent_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Old Student Name: "
+                android:layout_alignBaseline="@+id/Old_studentNumber"
+                android:layout_alignBottom="@+id/Old_studentNumber"
+                android:layout_alignLeft="@+id/student_number"
+                android:layout_alignStart="@+id/student_number" />
+
+            <EditText
+                android:id="@+id/Old_studentNumber"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:hint="Old Student Name"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/New_StudentNumber"
+                android:layout_alignStart="@+id/New_StudentNumber" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/New_StudentName"
+                android:layout_alignBottom="@+id/New_StudentName"
+                android:layout_alignEnd="@+id/textViewNew"
+                android:layout_alignRight="@+id/textViewNew"
+                android:text="New Student Surname: "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/Old_StudentName"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/New_StudentNumber"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="35dp"
+                android:hint="Old Student Surname" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignEnd="@+id/textView4"
+                android:layout_alignRight="@+id/textView4"
+                android:layout_below="@+id/OldMath"
+                android:layout_marginTop="13dp"
+                android:text="New Age " />
+
+            <EditText
+                android:id="@+id/New_StudentName"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Old_StudentName"
+                android:layout_alignStart="@+id/Old_StudentName"
+                android:layout_below="@+id/Old_StudentName"
+                android:hint="New Surname" />
+
+
+            <TextView
+                android:id="@+id/textViewNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Old_StudentName"
+                android:layout_alignBottom="@+id/Old_StudentName"
+                android:layout_alignEnd="@+id/textView4"
+                android:layout_alignRight="@+id/textView4"
+                android:text="Old Student Surname: "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/OldMath"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/New_StudentName"
+                android:layout_alignStart="@+id/New_StudentName"
+                android:layout_below="@+id/New_StudentName"
+                android:hint="Old Age" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/OldMath"
+                android:layout_alignBottom="@+id/OldMath"
+                android:layout_marginEnd="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_toLeftOf="@+id/NewMath"
+                android:layout_toStartOf="@+id/NewMath"
+                android:text="Old Age" />
+
+            <EditText
+                android:id="@+id/NewMath"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignLeft="@+id/OldMath"
+                android:layout_alignStart="@+id/OldMath"
+                android:hint="New Age" />
+
+
+            <TextView
+                android:id="@+id/oldBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/oldBusinessMarks"
+                android:layout_alignBottom="@+id/oldBusinessMarks"
+                android:layout_alignEnd="@+id/NewBusiness"
+                android:layout_alignRight="@+id/NewBusiness"
+                android:text="Old Grade" />
+
+            <EditText
+                android:id="@+id/oldBusinessMarks"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/NewMath"
+                android:layout_alignStart="@+id/NewMath"
+                android:layout_below="@+id/NewMath"
+                android:hint="Old Grade" />
+
+
+            <TextView
+                android:id="@+id/NewBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_above="@+id/oldAccountingMarks"
+                android:layout_alignEnd="@+id/oldAccounting"
+                android:layout_alignRight="@+id/oldAccounting"
+                android:text="New Grade" />
+
+            <EditText
+                android:id="@+id/NewBusinessMarks"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/oldBusinessMarks"
+                android:layout_alignStart="@+id/oldBusinessMarks"
+                android:layout_below="@+id/oldBusiness"
+                android:hint="New Grade" />
+
+
+
+            <TextView
+                android:id="@+id/oldAccounting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/oldAccountingMarks"
+                android:layout_alignBottom="@+id/oldAccountingMarks"
+                android:layout_alignEnd="@+id/NewAccounting"
+                android:layout_alignRight="@+id/NewAccounting"
+                android:text="Old Mathematics" />
+
+            <EditText
+                android:id="@+id/oldAccountingMarks"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:hint="Old Marks"
+                android:layout_below="@+id/NewBusinessMarks"
+                android:layout_alignLeft="@+id/NewBusinessMarks"
+                android:layout_alignStart="@+id/NewBusinessMarks" />
+
+
+            <TextView
+                android:id="@+id/NewAccounting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/NewAccountingMarks"
+                android:layout_alignBottom="@+id/NewAccountingMarks"
+                android:layout_alignEnd="@+id/textView4"
+                android:layout_alignRight="@+id/textView4"
+                android:text="New Mathematics" />
+
+            <EditText
+                android:id="@+id/NewAccountingMarks"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/oldAccountingMarks"
+                android:layout_alignStart="@+id/oldAccountingMarks"
+                android:layout_below="@+id/oldAccountingMarks"
+                android:hint="New Marks" />
+
+            <TextView
+                android:id="@+id/oldScience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/oldScienceMarks"
+                android:layout_alignBottom="@+id/oldScienceMarks"
+                android:layout_alignEnd="@+id/NewAccounting"
+                android:layout_alignRight="@+id/NewAccounting"
+                android:text="Old Science" />
+
+            <EditText
+                android:id="@+id/oldScienceMarks"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/NewAccountingMarks"
+                android:layout_alignStart="@+id/NewAccountingMarks"
+                android:layout_below="@+id/NewAccounting"
+                android:hint="Old Marks" />
+
+
+            <TextView
+                android:id="@+id/NewScience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/NewScienceMarks"
+                android:layout_alignBottom="@+id/NewScienceMarks"
+                android:layout_alignEnd="@+id/oldScience"
+                android:layout_alignRight="@+id/oldScience"
+                android:text="New Science" />
+
+            <EditText
+                android:id="@+id/NewScienceMarks"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/oldScienceMarks"
+                android:layout_alignStart="@+id/oldScienceMarks"
+                android:layout_below="@+id/oldScienceMarks"
+                android:hint="New Marks" />
+
+            <TextView
+                android:id="@+id/oldEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/oldEnglishMarks"
+                android:layout_alignBottom="@+id/oldEnglishMarks"
+                android:layout_alignEnd="@+id/NewEnglish"
+                android:layout_alignRight="@+id/NewEnglish"
+                android:text="Old English" />
+
+            <EditText
+                android:id="@+id/oldEnglishMarks"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/NewScienceMarks"
+                android:layout_alignStart="@+id/NewScienceMarks"
+                android:layout_below="@+id/NewScience"
+                android:layout_marginTop="12dp"
+                android:hint="Old Marks" />
+
+
+            <TextView
+                android:id="@+id/NewEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/NewEnglishMarks"
+                android:layout_alignBottom="@+id/NewEnglishMarks"
+                android:layout_alignLeft="@+id/NewScience"
+                android:layout_alignStart="@+id/NewScience"
+                android:text="New English" />
+
+            <EditText
+                android:id="@+id/NewEnglishMarks"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/NewScienceMarks"
+                android:layout_alignStart="@+id/NewScienceMarks"
+                android:layout_below="@+id/NewScienceMarks"
+                android:layout_marginTop="39dp"
+                android:hint="New Marks" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="update"
+
+                android:text="Update"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
